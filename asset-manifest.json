@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Cjewett9907/coding_challenge_082619/static/js/main.29c0ab50.chunk.js",
-    "main.js.map": "/Cjewett9907/coding_challenge_082619/static/js/main.29c0ab50.chunk.js.map",
-    "runtime~main.js": "/Cjewett9907/coding_challenge_082619/static/js/runtime~main.f8ebd49d.js",
-    "runtime~main.js.map": "/Cjewett9907/coding_challenge_082619/static/js/runtime~main.f8ebd49d.js.map",
-    "static/js/2.c16f6c64.chunk.js": "/Cjewett9907/coding_challenge_082619/static/js/2.c16f6c64.chunk.js",
-    "static/js/2.c16f6c64.chunk.js.map": "/Cjewett9907/coding_challenge_082619/static/js/2.c16f6c64.chunk.js.map",
-    "index.html": "/Cjewett9907/coding_challenge_082619/index.html",
-    "precache-manifest.9e3e57dc16d7fc8f978940f3125e1c2b.js": "/Cjewett9907/coding_challenge_082619/precache-manifest.9e3e57dc16d7fc8f978940f3125e1c2b.js",
-    "service-worker.js": "/Cjewett9907/coding_challenge_082619/service-worker.js"
+    "main.js": "/coding_challenge_082619/static/js/main.29c0ab50.chunk.js",
+    "main.js.map": "/coding_challenge_082619/static/js/main.29c0ab50.chunk.js.map",
+    "runtime~main.js": "/coding_challenge_082619/static/js/runtime~main.bcc16750.js",
+    "runtime~main.js.map": "/coding_challenge_082619/static/js/runtime~main.bcc16750.js.map",
+    "static/js/2.c16f6c64.chunk.js": "/coding_challenge_082619/static/js/2.c16f6c64.chunk.js",
+    "static/js/2.c16f6c64.chunk.js.map": "/coding_challenge_082619/static/js/2.c16f6c64.chunk.js.map",
+    "index.html": "/coding_challenge_082619/index.html",
+    "precache-manifest.87b559f3b3f267dd0dae21cd14152e43.js": "/coding_challenge_082619/precache-manifest.87b559f3b3f267dd0dae21cd14152e43.js",
+    "service-worker.js": "/coding_challenge_082619/service-worker.js"
   }
 }
