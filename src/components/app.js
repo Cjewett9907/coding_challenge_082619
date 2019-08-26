@@ -8,7 +8,10 @@ class App extends React.Component{
         this.state = { }
     }
 
-    convertTime = () =>{
+    convertTime = (val) =>{
+        let dateTime = new Date(null)
+        dateTime.setSeconds(val)
+        let newTime = dateTime.toISOString().substr(11,8);
 
     }
 
