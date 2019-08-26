@@ -3,7 +3,7 @@ import React from 'react'
 class Timer extends React.Component{
     constructor(){
         super();
-        this.state = {time: 0, intervalId: null, val: 0}
+        this.state = {time: 0, intervalId: null, val: 0, convertedTime: 0}
     }
 
 
@@ -18,7 +18,13 @@ class Timer extends React.Component{
             return
         }
 
-        setInterval({}, 1000)
+        let intervalId = setInterval(() =>{
+            let time = this.state.time - 1;
+            this.setState({time})
+            let convertedTime = this.props.convertTime(this.state.time)
+            this.setState({convertedTime})
+        }, 1000)
+        this.setState({intervalId})
     }
     stop = (e) =>{
         e.preventDefault();
@@ -34,7 +40,8 @@ class Timer extends React.Component{
         e.preventDefault();
         let val = e.target.value
         this.setState({val})
-        // this.props.convertTime()
+        let convertedTime = this.props.convertTime(val)
+        this.setState({convertedTime})
     }
 
     handleSubmit = (e) =>{
@@ -54,6 +61,8 @@ class Timer extends React.Component{
             <div>
                 <h1>
                     {this.state.time}
+                    <br/>
+                    {this.state.convertedTime}
                 </h1>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text"

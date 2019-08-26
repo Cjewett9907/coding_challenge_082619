@@ -12,7 +12,7 @@ class App extends React.Component{
         let dateTime = new Date(null)
         dateTime.setSeconds(val)
         let newTime = dateTime.toISOString().substr(11,8);
-
+        return newTime
     }
 
 
