@@ -33,13 +33,14 @@ class Timer extends React.Component{
     }
     reset = (e) =>{
         e.preventDefault();
-        this.setState({time: 0})
+        // convertedTime = this.props.convertTime(0)
+        this.setState({time: 0, convertedTime: 0})
     }
 
     handleChange= (e) =>{
         e.preventDefault();
         let val = e.target.value
-        this.setState({val})
+        this.setState({val, time: val})
         let convertedTime = this.props.convertTime(val)
         this.setState({convertedTime})
     }
@@ -59,10 +60,13 @@ class Timer extends React.Component{
     render(){
         return (
             <div>
+                
                 <h1>
-                    {this.state.time}
-                    <br/>
-                    {this.state.convertedTime}
+                    {this.state.time} in seconds
+                </h1>
+                    
+                <h1>
+                    {this.state.convertedTime} in Hr:Min:Sec
                 </h1>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text"
